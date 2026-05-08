@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>☕Coffe shop☕</header> 
+  <nav></nav>
+
+  <main>
+    <aside>
+      <div class="center">
+        <span class="money_font">Your balance: </span> <span id="user_money" class="money_font">20</span><span class="money_font">$</span> 
+      </div>
+      
+    </aside>
+
+    <table border=1 id="menu">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Cappuccino</td>
+        <td class="price">3.75</td>
+        <td><button class="add" onclick="cappuccino(3.75)">Add</button></td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Expresso</td>
+        <td class="price">2.00</td>
+        <td><button class="add" onclick="expresso(2.00)">Add</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Latte</td>
+        <td class="price">4.25</td>
+        <td><button class="add" onclick="latte(4.25)">Add</button></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Americano</td>
+        <td class="price">3.00</td>
+        <td><button class="add" onclick="americano(3.00)">Add</button></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Macchiato</td>
+        <td class="price">4.00</td>
+        <td><button class="add" onclick="macchiato(4.00)">Add</button></td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>Frappé</td>
+        <td class="price">5.00</td>
+        <td><button class="add" onclick="frappe(5.00)">Add</button></td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>Mocha</td>
+        <td class="price">4.50</td>
+        <td><button class="add" onclick="mocha(4.50)">Add</button></td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td>Flat White</td>
+        <td class="price">4.00</td>
+        <td><button class="add" onclick="flat_white(4.00)">Add</button></td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td>Buy</td>
+        <td>---</td>
+        <td><button class="add" onclick="buy()">Buy</button></td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+        <td>Clear</td>
+        <td>---</td>
+        <td><button class="add" onclick="cancel()">Clear</button></td>
+      </tr> 
+    </table> <br><hr>
+
+    <section>
+      Your cart
+      <article></article>
+    </section>
+  </main>
+
+  <div class="center">
+    <span id="cart_price" class="money_font">0</span><span class="money_font">$</span> 
+    <p id="feedback">Waiting for purchase...</p>
+  </div>
+  
+  <div class="center">
+    <p id="cart_pics"></p>
+    <br><br><br><br><br><br><br><br><a href="credits.html">Credits</a>
+  </div>
+  
+  
+  <script>
+    const menu = document.getElementById("menu");
+    const price = +document.getElementsByClassName("price")
+    const cart_price = document.getElementById("cart_price")
+    let cart_pics = document.getElementById('cart_pics');
+    let user_money = document.getElementById("user_money");
+    let feedback = document.getElementById("feedback");
+
+
+    function cappuccino(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/cappuccino.png" alt="pic1" width="200px" height="200px" onclick="remove()">`
+    }
+    function expresso(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/expresso.png" alt="pic1" width="200px" height="200px">`
+    }
+    function latte(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/latte.png" alt="pic1" width="200px" height="200px">`
+    }
+    function americano(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/americano.png" alt="pic1" width="200px" height="200px">`
+    }
+    function macchiato(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/macchiato.png" alt="pic1" width="200px" height="200px">`
+    }
+    function frappe(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/frappe.png" alt="pic1" width="200px" height="200px">`
+    }
+    function mocha(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/mocha.png" alt="pic1" width="200px" height="200px">`
+    }
+    function flat_white(cena) {
+      cart_price.innerText = +cart_price.innerText + cena;
+      cart_pics.innerHTML += `<img src="images/flat_white.png" alt="pic1" width="200px" height="200px">`
+    }
+    
+
+    function cancel() {
+      cart_price.innerText = 0;
+      cart_pics.innerText = ""
+      feedback.innerText = "Waiting for purchase..."
+      feedback.style.color = "#F0FFFF55"
+      feedback.style.fontStyle = "italic";
+    }
+
+    function buy() {
+      if (+user_money.innerText < +cart_price.innerText) {
+        feedback.innerText = "Balance too low for this purchase!"
+        feedback.style.color = '#C0392B'; }
+
+      else if (+user_money.innerText >= +cart_price.innerText) {
+        feedback.innerText = "Purchase successful! Enjoy your coffee."
+        feedback.style.color = '#27AE60';
+        user_money.innerText -= cart_price.innerText;
+        cart_pics.innerText = ""
+      }
+      else{
+        feedback.innerText = "There was some error"
+        cart_price.innerText = 0;
+        cart_pics.innerText = "";
+        feedback.style.color = '#C0392B';
+      }
+      }
+
+
+
+
+  </script>
+</body>
+</html>

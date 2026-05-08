@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color:azure;
+}
+
+header,section {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 4px;
+  transition: 1s;
+}
+
+header:hover {
+  letter-spacing: 15px;
+  color: rgba(240, 255, 255, 0.692);
+}
+
+body {
+    background-image: url('images/background.jpg'); 
+    background-repeat: no-repeat;      
+    background-size: cover;            
+    background-attachment: fixed;
+}
+
+
+table {
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0 0 100px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  border-width: 3px;
+  border: solid;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  size: 200%;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+
+#choice {
+  display: flex;
+  justify-content: center;
+}
+
+.add {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;      
+  background-size: cover;            
+  background-attachment: fixed;
+  border:none;
+  width: 100%;
+}
+
+.add:hover {
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+}
+
+
+img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.money_font {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color:azure;
+}
+
+
+#feedback {
+  font-style:italic;
+  color:rgba(240, 255, 255, 0.329);
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+img {
+  border-radius: 20%;
+}
