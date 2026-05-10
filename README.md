@@ -1,28 +1,28 @@
 # projects 🗂️
 
-> *🔵 just a place when i drop all my current projects that im working on.* <br>
+> *🔵 just a place where i drop all my current projects that i'm working on.*
 
-🟦 This is just my personal projects space, here i will just post all kinds of my projects that i will try to set and finish for myself.  <br>
-
-🟦 My goal is to post at least **one** project a week, yk through the week i will be working on current project (depends how busy the week is) if I can put more time into into the project will be more polished and bigger. <br>
+🟦 this is just my personal project space, here i will post all kinds of projects that i will try to set and finish for myself. <br>
+🟦 my goal is to post at least **one** project a week, yk through the week i will be working on the current project (depends on how busy the week is) — if i can put more time into it, the project will be more polished and bigger. <br>
 
 ---
 
-### what to expect 
-- projects in various languages to practice and improve my skills, 💙  <br>
-- different levels - i belive if i will keep working the projects will keep getting better and better, 💙  <br>
-- at least one new project dropped every week, 💙  <br>
-- size - sometimes the projects can be tiny yk, sometimes i won't have much time to do certain project so i will pick smaller ones, 💙  <br>
-- note: also i would love to get some ideas for new projects for future, it would be very helpfull 💙  <br>
+### what to expect
+- projects in various languages to practice and improve my skills 💙 <br>
+- different levels — i believe if i keep working, the projects will keep getting better and better 💙 <br>
+- at least one new project dropped every week 💙 <br>
+- size — sometimes the projects can be tiny yk, sometimes i won't have much time so i will pick smaller ones 💙 <br>
+- note: i would also love to get some ideas for new projects in the future, it would be very helpful 💙 <br>
 
 ---
 
 ### why do i do this?
- 
-- I belive to be master in something the biggest impact has consistency, it's better to post regular maybe not the biggest projects rather than just giving up in your own delusions 🟦
+
+- i believe that to master something, consistency has the biggest impact — it's better to post regular, maybe not the biggest projects, rather than just giving up on your own ambitions 🟦
+
 ---
 
 ### note:
-🔵 I have to admit i've been using ai for my read.me's yk it automates my work and is much more easier to write what i did but listen never in my code, but this time i wrote everything myself and I will try to do the same with all my new read.me's in the future if it will be possible [sorry for my gramma if you noticed some mistakes and yes i tried doing it in that blue theme vibe hope u like it :p]
+🔵 i have to admit i've been using ai for my readme's — yk it automates my work and is much easier, but never in my code. this time though i wrote everything myself and i will try to do the same with all my new readme's in the future if possible. maybe i will just fix my gramma so everything will look profesional, and yes i tried going for that blue theme vibe — hope you like it :p
 
 *always building. always learning. one project at a time. 💙*
