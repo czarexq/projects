@@ -24,5 +24,5 @@
 
 ### note:
 🔵 i have to admit i've been using ai for my readme's — yk it automates my work and is much easier, but never in my code. this time though i wrote everything myself and i will try to do the same with all my new readme's in the future if possible. maybe i will just fix my gramma so everything will look profesional, and yes i tried going for that blue theme vibe — hope you like it :p
-
+---
 *always building. always learning. one project at a time. 💙*
