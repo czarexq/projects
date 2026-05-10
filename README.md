@@ -19,7 +19,7 @@ my goal is to finish and push **at least one project every week** — no matter 
 ---
 
 ### why i do this
-i believe the best way to learn programming is to actually build things. reading theory is fine, but nothing beats sitting down and writing real code that does something. 
+- i believe the best way to learn programming is to actually build things. reading theory is fine, but nothing beats sitting down and writing real code that does something. 
 ---
 
 *always building. always learning. one project at a time. 💙*
