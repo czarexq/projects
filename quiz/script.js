@@ -1,6 +1,6 @@
-let number = document.getElementById("question_number")
-let question = document.getElementById("question")
-let points = 0
+let number = document.getElementById("question_number");
+let question = document.getElementById("question");
+let points = 0;
 
 function one() {
 
