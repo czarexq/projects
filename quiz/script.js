@@ -107,6 +107,8 @@ function one(){
     }
     if(+number.innerText == 7) {
       seventh_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 8) {
       eighth_question()
@@ -116,6 +118,8 @@ function one(){
     }
     if(+number.innerText == 10) {
       tenth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 11) {
       number.innerText = 10
@@ -137,6 +141,8 @@ function two() {
     }
     if(+number.innerText == 5) {
       fifth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 6) {
       sixth_question()
@@ -146,9 +152,13 @@ function two() {
     }
     if(+number.innerText == 8) {
       eighth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 9) {
       ninth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 10) {
       tenth_question()
@@ -170,12 +180,16 @@ function three() {
     }
     if(+number.innerText == 4) {
       fourth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 5) {
       fifth_question()
     }
     if(+number.innerText == 6) {
       sixth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 7) {
       seventh_question()
@@ -190,6 +204,8 @@ function three() {
       tenth_question()
     }
     if(+number.innerText == 11) {
+      count_score += 1;
+      score.innerText = count_score;
       number.innerText = 10
       hide()
       question.innerText = "Finished"
