@@ -5,6 +5,7 @@ let button2 = document.getElementById("button2");
 let button3 = document.getElementById("button3");
 let button4 = document.getElementById("button4");
 let score = document.getElementById("score");
+let delete_something = document.getElementById("delete");
 let count_score = 0;
 number.innerText = +number.innerText - 1;
 
@@ -16,6 +17,7 @@ function hide() {
     button4.style.display = "none";
     question.style.display = "none";
     number.style.display = "none";
+
 }
 
 function first_question() {
@@ -25,68 +27,77 @@ function first_question() {
   button3.innerText = "Hyperlink and Text Management";
   button4.innerText = "Home Tool Markup Language";
 }
+
 function second_question() {
   question.innerText = "2. In JavaScript, which keyword is used to declare a variable that can be changed?";
   button1.innerText = "const";
   button2.innerText = "let";
-  button3.innerText = "var_change";
-  button4.innerText = "fixed";
+  button3.innerText = "fixed";
+  button4.innerText = "static";
 }
+
 function third_question() {
   question.innerText = "3. What is the main purpose of CSS?";
-  button1.innerText = "To create logic and functions";
+  button1.innerText = "To create logic";
   button2.innerText = "To manage databases";
-  button3.innerText = "To style and layout web pages";
-  button4.innerText = "To send emails from a server";
+  button3.innerText = "To style web pages";
+  button4.innerText = "To send emails";
 }
+
 function fourth_question() {
-  question.innerText = "4. Which Git command is used to copy a repository from GitHub to your local machine?";
+  question.innerText = "4. Which Git command is used to copy a repository to your local machine?";
   button1.innerText = "git copy";
-  button2.innerText = "git clone";
-  button3.innerText = "git download";
-  button4.innerText = "git pull --all";
+  button2.innerText = "git download";
+  button3.innerText = "git push";
+  button4.innerText = "git clone";
 }
+
 function fifth_question() {
   question.innerText = "5. What is a 'Boolean' in programming?";
   button1.innerText = "A type of loop";
-  button2.innerText = "A function that returns text";
-  button3.innerText = "A data type that can only be True or False";
-  button4.innerText = "A styling property in CSS";
+  button2.innerText = "A data type (True/False)";
+  button3.innerText = "A CSS property";
+  button4.innerText = "A HTML tag";
 }
+
 function sixth_question() {
-  question.innerText = "6. Which Git command moves your local changes to the 'Staging Area'?";
+  question.innerText = "6. Which Git command moves changes to the 'Staging Area'?";
   button1.innerText = "git add";
-  button2.innerText = "git stage-now";
-  button3.innerText = "git commit";
-  button4.innerText = "git push";
+  button2.innerText = "git commit";
+  button3.innerText = "git stage-now";
+  button4.innerText = "git upload";
 }
+
 function seventh_question() {
   question.innerText = "7. What does 'Dry Run' mean in coding?";
-  button1.innerText = "Coding without drinking water";
-  button2.innerText = "Testing a process without actually executing the actions";
-  button3.innerText = "Running code on a server";
-  button4.innerText = "Writing code on paper";
+  button1.innerText = "Coding without water";
+  button2.innerText = "Running on paper";
+  button3.innerText = "Testing without executing";
+  button4.innerText = "Deleting the code";
 }
+
 function eighth_question() {
   question.innerText = "8. In Git, what is the 'HEAD'?";
-  button1.innerText = "The top line of a file";
-  button2.innerText = "A pointer to the current branch/commit you are working on";
-  button3.innerText = "The first ever commit in a project";
-  button4.innerText = "The GitHub profile administrator";
+  button1.innerText = "The top line";
+  button2.innerText = "The first commit";
+  button3.innerText = "A pointer to current branch";
+  button4.innerText = "The GitHub logo";
 }
+
 function ninth_question() {
   question.innerText = "9. What is an 'Array' used for?";
-  button1.innerText = "To store multiple values in a single variable";
-  button2.innerText = "To connect to the internet";
-  button3.innerText = "To delete files permanently";
-  button4.innerText = "To create a new folder";
+  button1.innerText = "To store multiple values";
+  button2.innerText = "To connect to Wi-Fi";
+  button3.innerText = "To delete folders";
+  button4.innerText = "To name a variable";
 }
+
 function tenth_question() {
   question.innerText = "10. What does the 'm' stand for in: git commit -m 'Message'?";
-  button1.innerText = "main";
-  button2.innerText = "modify";
-  button3.innerText = "message";
-  button4.innerText = "move";
+  button1.innerText = "modify";
+  button2.innerText = "main";
+  button3.innerText = "move";
+  button4.innerText = "message";
 }
 
 
@@ -109,9 +120,9 @@ function one(){
       sixth_question()
     }
     if(+number.innerText == 6) {
-      seventh_question()
       count_score += 1;
       score.innerText = count_score;
+      seventh_question()
     }
     if(+number.innerText == 7) {
       eighth_question()
@@ -120,18 +131,16 @@ function one(){
       ninth_question()
     }
     if(+number.innerText == 9) {
-      tenth_question()
       count_score += 1;
       score.innerText = count_score;
+      tenth_question()
     }
     if(+number.innerText == 10) {
-      tenth_question()
       number.innerText = 10
       hide()
       question.innerText = "Finished"
     }
 }
-
 function two() {
     number.innerText = +number.innerText + 1;
     if(+number.innerText == 1) {
@@ -149,10 +158,10 @@ function two() {
     }
     if(+number.innerText == 4) {
       fifth_question()
-      count_score += 1;
-      score.innerText = count_score;
     }
     if(+number.innerText == 5) {
+      count_score += 1;
+      score.innerText = count_score;
       sixth_question()
     }
     if(+number.innerText == 6) {
@@ -160,13 +169,9 @@ function two() {
     }
     if(+number.innerText == 7) {
       eighth_question()
-      count_score += 1;
-      score.innerText = count_score;
     }
     if(+number.innerText == 8) {
       ninth_question()
-      count_score += 1;
-      score.innerText = count_score;
     }
     if(+number.innerText == 9) {
       tenth_question()
@@ -196,30 +201,29 @@ function three() {
     }
     if(+number.innerText == 5) {
       sixth_question()
-      count_score += 1;
-      score.innerText = count_score;
     }
     if(+number.innerText == 6) {
       seventh_question()
     }
     if(+number.innerText == 7) {
+      count_score += 1;
+      score.innerText = count_score;
       eighth_question()
     }
     if(+number.innerText == 8) {
+      count_score += 1;
+      score.innerText = count_score;
       ninth_question()
     }
     if(+number.innerText == 9) {
       tenth_question()
     }
     if(+number.innerText == 10) {
-      count_score += 1;
-      score.innerText = count_score;
       number.innerText = 10
       hide()
       question.innerText = "Finished"
     }
-  }  
-
+  }   
 function four() {
     number.innerText = +number.innerText + 1;
     if(+number.innerText == 1) {
@@ -233,6 +237,8 @@ function four() {
     }
     if(+number.innerText == 4) {
       fifth_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 5) {
       sixth_question()
@@ -250,8 +256,11 @@ function four() {
       tenth_question()
     }
     if(+number.innerText == 10) {
+      count_score += 1;
+      score.innerText = count_score;
       number.innerText = 10
       hide()
       question.innerText = "Finished"
     }
-  } 
+  }
+  
