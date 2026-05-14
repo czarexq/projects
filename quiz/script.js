@@ -7,6 +7,7 @@ let button4 = document.getElementById("button4");
 let button5 = document.getElementById("button5");
 let score = document.getElementById("score");
 let delete_something = document.getElementById("delete");
+let credits = document.getElementById("credits");
 let count_score = 0;
 number.innerText = +number.innerText - 1;
 
@@ -21,6 +22,7 @@ function hide() {
     score.innerText = count_score+"/10"
     question.innerHTML = `<img src="rizz.png" alt="rizz" width="200px" height="200px" onlick="again()"></img>`
     button5.style.display = "block";
+    credits.style.display = "block";
 }
 
 function first_question() {

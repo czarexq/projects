@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+a {
+  display: none;
+}
 #button5 {
   display:none;
   margin-top: 0px;
