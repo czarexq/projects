@@ -14,13 +14,14 @@ function hide() {
     button4.style.display = "none";
 }
 
-if (+number.innerText == 1) {
+function first_question() {
   question.innerText = "1. What does HTML stand for?";
   button1.innerText = "HighText Machine Language";
   button2.innerText = "HyperText Markup Language";
   button3.innerText = "Hyperlink and Text Management";
   button4.innerText = "Home Tool Markup Language";
 }
+
 function second_question() {
   question.innerText = "2. In JavaScript, which keyword is used to declare a variable that can be changed?";
   button1.innerText = "const";

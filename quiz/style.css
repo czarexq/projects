@@ -6,7 +6,9 @@
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color:black;
+  color:white;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .center {
@@ -18,5 +20,47 @@
 }
 
 header, #question_number {
-  font-size: 40px;
+  font-size: 45px;
+  border-radius: 15px;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  color: black;
+  border-radius: 15px;
+  border-color: none;
+  border-style: solid;
+  letter-spacing: 0px;
+  border: none;
+  font-size: 22px;
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+  padding: 16px 24px;
+}
+
+button:hover {
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff0055; 
+    transition: 0.3s;
+}
+
+button:active {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0 0 60px #df0a51; 
+    background-color: #df0a51;
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+
+
+#question, #score, #score_text {
+  font-size: 30px;
 }
