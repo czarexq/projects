@@ -6,7 +6,8 @@
 
 
 
-Project made to test your skills and for me to practice, javascript, html, css.
+Project made to test your skills and for me to practice, javascript, html, css. <br>
+Quick 10 question project
 
 
 
