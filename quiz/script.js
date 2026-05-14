@@ -6,12 +6,16 @@ let button3 = document.getElementById("button3");
 let button4 = document.getElementById("button4");
 let score = document.getElementById("score");
 let count_score = 0;
+number.innerText = +number.innerText - 1;
+
 
 function hide() {
     button1.style.display = "none";
     button2.style.display = "none";
     button3.style.display = "none";
     button4.style.display = "none";
+    question.style.display = "none";
+    number.style.display = "none";
 }
 
 function first_question() {
@@ -21,7 +25,6 @@ function first_question() {
   button3.innerText = "Hyperlink and Text Management";
   button4.innerText = "Home Tool Markup Language";
 }
-
 function second_question() {
   question.innerText = "2. In JavaScript, which keyword is used to declare a variable that can be changed?";
   button1.innerText = "const";
@@ -90,38 +93,39 @@ function tenth_question() {
 
 function one(){
     number.innerText = +number.innerText + 1;
-    if(+number.innerText == 2) {
-      second_qestion()
+    if(+number.innerText == 1) {
+      second_question()
     }
-    if(+number.innerText == 3) {
+    if(+number.innerText == 2) {
       third_question()
     }
-    if(+number.innerText == 4) {
+    if(+number.innerText == 3) {
       fourth_question()
     }
-    if(+number.innerText == 5) {
+    if(+number.innerText == 4) {
       fifth_question()
     }
-    if(+number.innerText == 6) {
+    if(+number.innerText == 5) {
       sixth_question()
     }
-    if(+number.innerText == 7) {
+    if(+number.innerText == 6) {
       seventh_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 8) {
+    if(+number.innerText == 7) {
       eighth_question()
     }
-    if(+number.innerText == 9) {
+    if(+number.innerText == 8) {
       ninth_question()
     }
-    if(+number.innerText == 10) {
+    if(+number.innerText == 9) {
       tenth_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 11) {
+    if(+number.innerText == 10) {
+      tenth_question()
       number.innerText = 10
       hide()
       question.innerText = "Finished"
@@ -130,40 +134,44 @@ function one(){
 
 function two() {
     number.innerText = +number.innerText + 1;
+    if(+number.innerText == 1) {
+      second_question()
+      count_score += 1;
+      score.innerText = count_score;
+    }
     if(+number.innerText == 2) {
-      second_qestion()
+      third_question()
+      count_score += 1;
+      score.innerText = count_score;
     }
     if(+number.innerText == 3) {
-      third_question()
-    }
-    if(+number.innerText == 4) {
       fourth_question()
     }
-    if(+number.innerText == 5) {
+    if(+number.innerText == 4) {
       fifth_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 6) {
+    if(+number.innerText == 5) {
       sixth_question()
     }
-    if(+number.innerText == 7) {
+    if(+number.innerText == 6) {
       seventh_question()
     }
-    if(+number.innerText == 8) {
+    if(+number.innerText == 7) {
       eighth_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 9) {
+    if(+number.innerText == 8) {
       ninth_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 10) {
+    if(+number.innerText == 9) {
       tenth_question()
     }
-    if(+number.innerText == 11) {
+    if(+number.innerText == 10) {
       number.innerText = 10
       hide()
       question.innerText = "Finished"
@@ -172,38 +180,38 @@ function two() {
 
 function three() {
     number.innerText = +number.innerText + 1;
-    if(+number.innerText == 2) {
-      second_qestion()
+    if(+number.innerText == 1) {
+      second_question()
     }
-    if(+number.innerText == 3) {
+    if(+number.innerText == 2) {
       third_question()
     }
-    if(+number.innerText == 4) {
+    if(+number.innerText == 3) {
       fourth_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 5) {
+    if(+number.innerText == 4) {
       fifth_question()
     }
-    if(+number.innerText == 6) {
+    if(+number.innerText == 5) {
       sixth_question()
       count_score += 1;
       score.innerText = count_score;
     }
-    if(+number.innerText == 7) {
+    if(+number.innerText == 6) {
       seventh_question()
     }
-    if(+number.innerText == 8) {
+    if(+number.innerText == 7) {
       eighth_question()
     }
-    if(+number.innerText == 9) {
+    if(+number.innerText == 8) {
       ninth_question()
     }
-    if(+number.innerText == 10) {
+    if(+number.innerText == 9) {
       tenth_question()
     }
-    if(+number.innerText == 11) {
+    if(+number.innerText == 10) {
       count_score += 1;
       score.innerText = count_score;
       number.innerText = 10
@@ -214,34 +222,34 @@ function three() {
 
 function four() {
     number.innerText = +number.innerText + 1;
-    if(+number.innerText == 2) {
-      second_qestion()
+    if(+number.innerText == 1) {
+      second_question()
     }
-    if(+number.innerText == 3) {
+    if(+number.innerText == 2) {
       third_question()
     }
-    if(+number.innerText == 4) {
+    if(+number.innerText == 3) {
       fourth_question()
     }
-    if(+number.innerText == 5) {
+    if(+number.innerText == 4) {
       fifth_question()
     }
-    if(+number.innerText == 6) {
+    if(+number.innerText == 5) {
       sixth_question()
     }
-    if(+number.innerText == 7) {
+    if(+number.innerText == 6) {
       seventh_question()
     }
-    if(+number.innerText == 8) {
+    if(+number.innerText == 7) {
       eighth_question()
     }
-    if(+number.innerText == 9) {
+    if(+number.innerText == 8) {
       ninth_question()
     }
-    if(+number.innerText == 10) {
+    if(+number.innerText == 9) {
       tenth_question()
     }
-    if(+number.innerText == 11) {
+    if(+number.innerText == 10) {
       number.innerText = 10
       hide()
       question.innerText = "Finished"
