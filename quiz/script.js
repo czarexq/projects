@@ -4,6 +4,7 @@ let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
 let button3 = document.getElementById("button3");
 let button4 = document.getElementById("button4");
+let button5 = document.getElementById("button5");
 let score = document.getElementById("score");
 let delete_something = document.getElementById("delete");
 let count_score = 0;
@@ -15,9 +16,11 @@ function hide() {
     button2.style.display = "none";
     button3.style.display = "none";
     button4.style.display = "none";
-    question.style.display = "none";
     number.style.display = "none";
-
+    delete_something.innerHTML = "Well done!! You managed to finish this test, your score:" + `<br>` + "Thanks for playing!!!"
+    score.innerText = count_score+"/10"
+    question.innerHTML = `<img src="rizz.png" alt="rizz" width="200px" height="200px" onlick="again()"></img>`
+    button5.style.display = "block";
 }
 
 function first_question() {
@@ -100,8 +103,6 @@ function tenth_question() {
   button4.innerText = "message";
 }
 
-
-
 function one(){
     number.innerText = +number.innerText + 1;
     if(+number.innerText == 1) {
@@ -138,7 +139,6 @@ function one(){
     if(+number.innerText == 10) {
       number.innerText = 10
       hide()
-      question.innerText = "Finished"
     }
 }
 function two() {
@@ -179,7 +179,6 @@ function two() {
     if(+number.innerText == 10) {
       number.innerText = 10
       hide()
-      question.innerText = "Finished"
     }
   }
 
@@ -221,7 +220,6 @@ function three() {
     if(+number.innerText == 10) {
       number.innerText = 10
       hide()
-      question.innerText = "Finished"
     }
   }   
 function four() {
@@ -260,7 +258,8 @@ function four() {
       score.innerText = count_score;
       number.innerText = 10
       hide()
-      question.innerText = "Finished"
     }
-  }
-  
+}
+function reset() {
+  window.location.reload()
+}
