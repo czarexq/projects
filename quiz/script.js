@@ -6,6 +6,7 @@ let button3 = document.getElementById("button3");
 let button4 = document.getElementById("button4");
 let test = document.getElementById("test");
 let score = document.getElementById("score");
+let count_score=0;
 
 if (+number.innerText == 1) {
   question.innerText = "1. What does HTML stand for?";
@@ -13,17 +14,14 @@ if (+number.innerText == 1) {
   button2.innerText = "HyperText Markup Language";
   button3.innerText = "Hyperlink and Text Management";
   button4.innerText = "Home Tool Markup Language";
-  if(button2.onclick) {
-    score 
-  }
 }
 
 function second_qestion() {
-  question.innerText = "2. What does HTML stand for?";
-  button1.innerText = "HighText Machine Language";
-  button2.innerText = "HyperText Markup Language";
-  button3.innerText = "Hyperlink and Text Management";
-  button4.innerText = "Home Tool Markup Language";
+  question.innerText = "2. In JavaScript, which keyword is used to declare a variable that can be changed?";
+  button1.innerText = "const";
+  button2.innerText = "let";
+  button3.innerText = "var_change";
+  button4.innerText = "fixed";
 }
 
 function third_question() {
@@ -34,13 +32,12 @@ function third_question() {
   button4.innerText = "To send emails from a server";
 }
 
-
-
-
-
-
   function one(){
-    number.innerText = +number.innerText + 1 ;
+    number.innerText = +number.innerText + 1;
+    if(+number.innerText == 2) {
+      count_score += 1
+      score.innerText = count_score;
+    }
     if(+number.innerText == 2) {
       second_qestion()
     }
@@ -53,7 +50,8 @@ function two() {
     number.innerText = +number.innerText + 1 ;
     if(+number.innerText == 2) {
       second_qestion()
-      score.innerText = +score.innerText + 1
+      count_score += 1
+      score.innerText = count_score;
     }
     if(+number.innerText == 3) {
       third_question()
