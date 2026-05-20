@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Jost", sans-serif;
+  font-style: italic;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f111a;
+}
+
 
 button {
   font-size: 30px;
@@ -6,12 +20,27 @@ button {
   margin: 10px;
   padding: 2px;
   border-radius: 40px;
-  border-style: solid;
+  border: none;
+  font-weight: 800;
+  background-color: #282e4a;
+  color: white;
+  box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.9);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #282e4aaf;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 1);
 }
 
 input {
   width: 98%;
   height: 100px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  border: none;
+  background-color: #22273f;
 }
 
 #clear {
@@ -21,9 +50,15 @@ input {
 }
 
 #calculator {
+  display: grid;
+  margin-top: 80px;
   width: 500px;
-  border-color: aqua;
-  border: 3px;
-  border-style: solid;
+  border: none;
   padding: 30px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 50px rgba(255, 255,255, 0.9);
+  background-color: #1e2235;
 }
