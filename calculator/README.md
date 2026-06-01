@@ -31,6 +31,6 @@ This time i went to make this really simple and just easy to use. I wanted to go
 
 
 My feedback: 
-I practiced DOM and also mainly arguments and how to effectively use them
+*I practiced DOM, arguments and how to effectively use them.*
 
 *Made with 💙 while learning mainly aguments/DOM*
