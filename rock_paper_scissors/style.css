@@ -1,0 +1,36 @@
+body {
+  background-image: url(gradient.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+* {
+  font-size: 40px;
+  color: white;  
+  font-family: "Cherry Bomb One", system-ui;
+}
+
+img {
+  width: 80%;
+  width: 400px;
+  height: 80%;
+  border-radius: 20px;
+  border: 10px;
+  border-style: solid;
+
+}
+
+.style1 {
+  border-color: none;
+  border-radius: 34px;
+  border-style: none;
+  box-shadow: black 10px 10px 10px;
+  margin: 20px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+

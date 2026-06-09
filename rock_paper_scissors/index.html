@@ -4,26 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   Your score:<span id="your_score">0</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  AI score:<span id="ai_score">0</span> <br>
+  AI score:<span id="ai_score">0</span> <br><br>
   Pick your choice: <br>
   <section id="my_choices">
-    <button id="rock" onclick="clicked('rock')">ROCK</button>
-    <button id="paper" onclick="clicked('paper')">PAPER</button>
-    <button id="scissors" onclick="clicked('scissors')">SCISSORS</button> <br>
-  </section>
+    <button id="rock" onclick="clicked('rock')" class="style1"><img src="rock.png"></button>
+    <button id="paper" onclick="clicked('paper')" class="style1"><img src="paper.png"></button>
+    <button id="scissors" onclick="clicked('scissors')" class="style1"><img src="scissors.png"></button> <br>
+  </section> <br>
 
   <section id="ai_choices">
-    Computer's choice: <br>
-    <span id="ai_rock">ROCK</span> 
-    <span id="ai_paper">PAPER</span>
-    <span id="ai_scissors">SCISSORS</span>
+    Your's choice:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer's choice:<br>
+    <span id="chosen_scissors"><img id="chosen_scissors" src="scissors.png" class="style1"></span> 
+    <span id="chosen_paper"><img id="chosen_paper" src="paper.png" class="style1"></span> 
+    <span id="chosen_rock"><img id="chosen_rock" src="rock.png" class="style1"></span> 
+
+    <span id="ai_rock"><img id="rock_ai_img" src="rock.png" class="style1"></span> 
+    <span id="ai_paper"><img id="paper_ai_img" src="paper.png" class="style1"></span>
+    <span id="ai_scissors"><img id="scissors_ai_img" src="scissors.png" class="style1"></span>
   </section>
-
   <span id="result"></span>
-
   <script src="script.js"></script>
 </body>
 </html>

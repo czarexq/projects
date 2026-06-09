@@ -11,6 +11,20 @@ let your_score = document.getElementById("your_score");
 let ai_score = document.getElementById("ai_score");
 let your_score_count = 0
 let ai_score_count = 0
+let ai_rock_img = document.getElementById("rock_ai_img")
+let ai_paper_img = document.getElementById("paper_ai_img")
+let ai_scissors_img = document.getElementById("scissors_ai_img")
+let chosen_rock = document.getElementById("chosen_rock")
+let chosen_paper = document.getElementById("chosen_paper")
+let chosen_scissors = document.getElementById("chosen_scissors")
+
+chosen_rock.style.display = "none"
+chosen_paper.style.display = "none"
+chosen_scissors.style.display = "none"
+ai_paper_img.style.display = "none"
+ai_scissors_img.style.display = "none"
+ai_rock_img.style.display = "none"
+
 
 function clear() {
   rock_ai.style.backgroundColor = null
@@ -32,23 +46,19 @@ function clicked(object) {
   console.log(ai_choice)
 
   if (ai_choice == "rock") {
-    rock_ai.style.backgroundColor = "green";
+    ai_paper_img.style.display = "none"
+    ai_scissors_img.style.display = "none"
+    ai_rock_img.style.display = "inline"
   }
   else if (ai_choice == "paper") {
-    paper_ai.style.backgroundColor = "green";
+    ai_paper_img.style.display = "inline"
+    ai_scissors_img.style.display = "none"
+    ai_rock_img.style.display = "none"
   }
   else {
-    scissors_ai.style.backgroundColor = "green"
-  }
-
-  if (object == "rock") {
-    rock.style.backgroundColor = "green"
-  }
-  else if (object == "paper") {
-    paper.style.backgroundColor = "green"
-  }
-  else{
-    scissors.style.backgroundColor = "green"
+    ai_paper_img.style.display = "none"
+    ai_scissors_img.style.display = "inline"
+    ai_rock_img.style.display = "none"
   }
 
   if (object == ai_choice) {
@@ -73,5 +83,21 @@ function clicked(object) {
     result.innerText = "You lose"
     ai_score_count += 1
     ai_score.innerText = ai_score_count
+  }
+
+  if (object == "rock") {
+    chosen_rock.style.display = "inline"
+    chosen_paper.style.display = "none"
+    chosen_scissors.style.display = "none"
+  }
+  else if (object == "paper") {
+    chosen_rock.style.display = "none"
+    chosen_paper.style.display = "inline"
+    chosen_scissors.style.display = "none"
+  }
+  else if (object == "scissors") {
+    chosen_rock.style.display = "none"
+    chosen_paper.style.display = "none"
+    chosen_scissors.style.display = "inline"
   }
 }
