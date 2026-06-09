@@ -7,12 +7,20 @@
 </head>
 <body>
   Pick your choice: <br>
-  <button>ROCK</button>
-  <button>PAPER</button>
-  <button>SCISSORS</button> <br>
-  Computer's choice: <br>
-  <span>ROCK</span> 
-  <span>PAPER</span>
-  <span>SCISSORS</span>
+  <section id="my_choices">
+    <button id="rock" onclick="clicked('rock')">ROCK</button>
+    <button id="paper" onclick="clicked('paper')">PAPER</button>
+    <button id="scissors" onclick="clicked('scissors')">SCISSORS</button> <br>
+  </section>
+
+  <section id="ai_choices">
+    Computer's choice: <br>
+    <span id="ai_rock">ROCK</span> 
+    <span id="ai_paper">PAPER</span>
+    <span id="ai_scissors">SCISSORS</span>
+  </section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
