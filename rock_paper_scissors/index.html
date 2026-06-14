@@ -10,28 +10,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--Player's part-->
   <section>
-  Your score:<span id="your_score">0</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  AI score:<span id="ai_score">0</span> <br><br>
-  Pick your choice: <br>
+    <span class="main">Your score:<span id="your_score">0</span></span> &nbsp;&nbsp;&nbsp;
+    <span class="main">AI score:<span id="ai_score">0</span> <br><br></span>
+    <span class="main">Pick your choice: <br></span>
   </section>
+
   <section id="my_choices">
     <button id="rock" onclick="clicked('rock')" class="style1"><img src="rock.png"></button>
     <button id="paper" onclick="clicked('paper')" class="style1"><img src="paper.png"></button>
     <button id="scissors" onclick="clicked('scissors')" class="style1"><img src="scissors.png"></button> <br>
   </section> <br>
 
-  <section id="ai_choices">
-    Your's choice:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer's choice:<br>
-    <span id="chosen_scissors"><img id="chosen_scissors" src="scissors.png" class="style1"></span> 
-    <span id="chosen_paper"><img id="chosen_paper" src="paper.png" class="style1"></span> 
-    <span id="chosen_rock"><img id="chosen_rock" src="rock.png" class="style1"></span> 
 
-    <span id="ai_rock"><img id="rock_ai_img" src="rock.png" class="style1"></span> 
-    <span id="ai_paper"><img id="paper_ai_img" src="paper.png" class="style1"></span>
-    <span id="ai_scissors"><img id="scissors_ai_img" src="scissors.png" class="style1"></span> <br><br>
-  </section>
+  <!--Calculate part-->
+    <span id="quick_format">
+      <span class="main2">~Your's choice:</span>
+      <span class="main2">~Computer's choice:<br></span>
+    </span>
+
+    <img id="chosen_scissors" src="scissors.png" class="style1">
+    <img id="chosen_paper" src="paper.png" class="style1">
+    <img id="chosen_rock" src="rock.png" class="style1">
+
+    <img id="rock_ai_img" src="rock.png" class="style1">
+    <img id="paper_ai_img" src="paper.png" class="style1">
+    <img id="scissors_ai_img" src="scissors.png" class="style1"> <br>
+
+
   <span id="result"></span>
+
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -27,17 +27,12 @@ ai_rock_img.style.display = "none"
 
 
 function clear() {
-  rock_ai.style.backgroundColor = null
-  paper_ai.style.backgroundColor = null
-  scissors_ai.style.backgroundColor = null;
   rock.style.backgroundColor = null
   paper.style.backgroundColor = null
   scissors.style.backgroundColor = null
   result.innerText = null;
 }
-function win() {
-  
-}
+
 
 function clicked(object) {
   console.log(ai_score_count)
