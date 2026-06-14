@@ -1,2 +1,2 @@
 will update later now just ss
-![alt text](image.png)
+![alt text](image-1.png)
