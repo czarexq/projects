@@ -15,7 +15,7 @@ body {
 }
 
 img {
-  width: 280px;
+  width: 250px;
   height: 200px;
   border-radius: 1000px;
   border: 10px;
@@ -40,7 +40,6 @@ button {
 
 
 button:hover {
-  
   transform: scale(1.1);
 }
 
@@ -54,6 +53,36 @@ button:hover {
 }
 
 .main2 {
-  margin: 200px;
+  margin: 100px;
+  transition: 0.3s;
 }
 
+.main2:hover {
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.507);  
+}
+
+.img2 {
+  width: 400px;
+  height: 280px;
+  border-radius: 45px;
+  border: none;
+  margin-left: 90px;
+  margin-right: 120px;
+  margin-top: 10px;
+  transition: 0.2s;
+  box-shadow: black 10px 10px 10px;
+}
+
+.img2:hover {
+  transform: scale(1.05);
+}
+
+#result {
+  transition: 0.5s;
+}
+
+#result:hover {
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.507);  
+}
