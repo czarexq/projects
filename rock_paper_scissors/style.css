@@ -14,8 +14,19 @@ body {
   letter-spacing: 4px;
 }
 
-img1 {
+.img1 {
+  width: 500px;
+  height: 270px;
+  border-radius: 45px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  transition: 0.2s;
+  box-shadow: black 10px 10px 10px;
+}
 
+.img1:hover {
+  transform: scale(1.05);
 }
 
 .style1 {
@@ -57,7 +68,7 @@ button:hover {
 
 .img2 {
   width: 400px;
-  height: 280px;
+  height: 260px;
   border-radius: 45px;
   border: none;
   margin-left: 90px;
