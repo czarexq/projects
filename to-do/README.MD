@@ -19,7 +19,7 @@ I just wanted to make something minimalistic and simple while doing it's job.
 3. Uznip the zip and enjoy!
 
 ## 📸 Preview
-
+![alt text](<Screenshot 2026-07-10 114629-1.png>)
 ---
 
 My feedback: 
