@@ -9,16 +9,72 @@ let eight_button = document.getElementById("button_8");
 let ninth_button = document.getElementById("button_9");
 
 let turn = 0;
+
+function check_win() {
+  if (first_button.innerHTML == "+" && second_button.innerHTML == "+" && third_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (first_button.innerHTML == "+" && fourth_button.innerHTML == "+" && seventh_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (first_button.innerHTML == "+" && fifth_button.innerHTML == "+" && ninth_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (fourth_button.innerHTML == "+" && fifth_button.innerHTML == "+" && sixth_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (seventh_button.innerHTML == "+" && eight_button.innerHTML == "+" && ninth_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (second_button.innerHTML == "+" && fifth_button.innerHTML == "+" && eight_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (third_button.innerHTML == "+" && sixth_button.innerHTML == "+" && ninth_button.innerHTML == "+") {
+    console.log("win");
+  }
+  else if (third_button.innerHTML == "+" && fifth_button.innerHTML == "+" && seventh_button.innerHTML == "+") {
+    console.log("win");
+  }
+
+
+  else if (first_button.innerHTML == "-" && second_button.innerHTML == "-" && third_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (first_button.innerHTML == "-" && fourth_button.innerHTML == "-" && seventh_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (first_button.innerHTML == "-" && fifth_button.innerHTML == "-" && ninth_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (fourth_button.innerHTML == "-" && fifth_button.innerHTML == "-" && sixth_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (seventh_button.innerHTML == "-" && eight_button.innerHTML == "-" && ninth_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (second_button.innerHTML == "-" && fifth_button.innerHTML == "-" && eight_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (third_button.innerHTML == "-" && sixth_button.innerHTML == "-" && ninth_button.innerHTML == "-") {
+    console.log("win");
+  }
+  else if (third_button.innerHTML == "-" && fifth_button.innerHTML == "-" && seventh_button.innerHTML == "-") {
+    console.log("win");
+  }
+}
+
 function change1() {
   if(first_button.innerText == "+" || first_button.innerText == "-" ) {
   }
   else if(turn % 2 == 0) {
     first_button.innerText = "+";
     turn++;
+    check_win();
   }
   else{
     first_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 function change2() {
@@ -27,10 +83,12 @@ function change2() {
   else if(turn%2 == 0) {
     second_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
     second_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 function change3() {
@@ -39,10 +97,12 @@ function change3() {
   else if(turn%2 == 0) {
     third_button.innerText = "+";
     turn++;
+    check_win();
   }
-  else if (turn%2 == 0){
+  else {
     third_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 function change4() {
@@ -51,10 +111,12 @@ function change4() {
   else if(turn%2 == 0) {
     fourth_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
     fourth_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 function change5() {
@@ -63,10 +125,12 @@ function change5() {
   else if(turn%2 == 0) {
     fifth_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
-    fourth_button.innerText = "-";
+    fifth_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 
@@ -76,10 +140,12 @@ function change6() {
   else if(turn%2 == 0) {
     sixth_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
     sixth_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 
@@ -89,10 +155,12 @@ function change7() {
   else if(turn%2 == 0) {
     seventh_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
     seventh_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 
@@ -102,10 +170,12 @@ function change8() {
   else if(turn%2 == 0) {
     eight_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
     eight_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
 
@@ -115,9 +185,11 @@ function change9() {
   else if(turn%2 == 0) {
     ninth_button.innerText = "+";
     turn++;
+    check_win();
   }
   else {
     ninth_button.innerText = "-";
     turn++;
+    check_win();
   }
 }
