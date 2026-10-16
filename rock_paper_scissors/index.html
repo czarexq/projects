@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Player's part-->
+  <section>
+    <span class="main">Your score:<span id="your_score">0</span></span> &nbsp;&nbsp;&nbsp;
+    <span class="main">AI score:<span id="ai_score">0</span> <br><br></span>
+    <span class="main">Pick your choice: <br></span>
+  </section>
+
+  <section id="my_choices">
+    <img src="rock.png" onclick="clicked('rock')" id="rock" class="img1">
+    <img src="paper.png" onclick="clicked('paper')" id="paper" class="img1">
+    <img src="scissors.png" onclick="clicked('scissors')" id="scissors" class="img1"> <br>
+  </section> <br>
+
+
+  <!--Calculate part-->
+  <span id="quick_format">
+    <span class="main2">~Your's choice:</span>
+    <span class="main2">~Computer's choice:<br></span>
+  </span>
+
+  <!--Show images-->
+  <img id="chosen_scissors" class="img2" src="scissors.png" class="style1">
+  <img id="chosen_paper" class="img2" src="paper.png" class="style1">
+  <img id="chosen_rock" class="img2" src="rock.png" class="style1">
+
+  <img id="rock_ai_img" class="img2" src="rock.png" class="style1">
+  <img id="paper_ai_img" class="img2" src="paper.png" class="style1">
+  <img id="scissors_ai_img" class="img2" src="scissors.png" class="style1"> <br>
+
+
+  <span id="result"></span>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

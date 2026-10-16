@@ -58,6 +58,7 @@
         feedback.style.color = '#27AE60';
         user_money.innerText -= cart_price.innerText;
         cart_pics.innerText = ""
+        cart_price.innerText=0;
       }
       else{
         feedback.innerText = "There was some error"

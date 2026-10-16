@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Jost", sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181c2b;
+}
+
+
+button {
+  font-size: 30px;
+  width: 100px;
+  height: 80px;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 800;
+  background-color: #282e4a;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #282e4a88;
+}
+
+input {
+  width: 440px;
+  height: 130px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  border: none;
+  background-color: #22273f;
+  font-size: 45px;
+  display: flex;
+  font-style:normal;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+
+#calculator {
+  width: 450px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d202e;
+  background-color: #1e2235;
+  margin-top: 160px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#buttons {
+  margin-left: 10px;
+}
+
+
+#clear_style {
+  width: 95%;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
