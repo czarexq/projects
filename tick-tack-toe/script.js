@@ -10,26 +10,23 @@ let ninth_button = document.getElementById("button_9");
 
 let turn = 0;
 function change1() {
-  console.log("działa");
   if(first_button.innerText == "+" || first_button.innerText == "-" ) {
-    console.log("pełne");
   }
   else if(turn % 2 == 0) {
     first_button.innerText = "+";
     turn++;
   }
-  else if (turn%2 != 0){
+  else{
     first_button.innerText = "-";
     turn++;
   }
 }
 function change2() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(second_button.innerText == "+" || second_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     second_button.innerText = "+";
     turn++;
-  }
-  else if(second_button.innerText == "+" || second_button.innerText == "-" ) {
   }
   else {
     second_button.innerText = "-";
@@ -37,12 +34,11 @@ function change2() {
   }
 }
 function change3() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(third_button.innerText == "+" || third_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     third_button.innerText = "+";
     turn++;
-  }
-  else if(third_button.innerText == "+" || third_button.innerText == "-" ) {
   }
   else if (turn%2 == 0){
     third_button.innerText = "-";
@@ -50,12 +46,11 @@ function change3() {
   }
 }
 function change4() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(fourth_button.innerText == "+" || fourth_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     fourth_button.innerText = "+";
     turn++;
-  }
-  else if(fourth_button.innerText == "+" || fourth_button.innerText == "-" ) {
   }
   else {
     fourth_button.innerText = "-";
@@ -63,12 +58,11 @@ function change4() {
   }
 }
 function change5() {
-  console.log("działa");
-  if(turn%2 == 0) {
-    fourth_button.innerText = "+";
-    turn++;
+  if(fifth_button.innerText == "+" || fifth_button.innerText == "-" ) {
   }
-  else if(fourth_button.innerText == "+" || fourth_button.innerText == "-" ) {
+  else if(turn%2 == 0) {
+    fifth_button.innerText = "+";
+    turn++;
   }
   else {
     fourth_button.innerText = "-";
@@ -76,26 +70,12 @@ function change5() {
   }
 }
 
-function change5() {
-  console.log("działa");
-  if(turn%2 == 0) {
-    fifth_button.innerText = "+";
-    turn++;
-  }
-  else if(fifth_button.innerText == "+" || fifth_button.innerText == "-" ) {
-  }
-  else {
-    fifth_button.innerText = "-";
-    turn++;
-  }
-}
 function change6() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(sixth_button.innerText == "+" || sixth_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     sixth_button.innerText = "+";
     turn++;
-  }
-  else if(sixth_button.innerText == "+" || sixth_button.innerText == "-" ) {
   }
   else {
     sixth_button.innerText = "-";
@@ -104,12 +84,11 @@ function change6() {
 }
 
 function change7() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(seventh_button.innerText == "+" || seventh_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     seventh_button.innerText = "+";
     turn++;
-  }
-  else if(seventh_button.innerText == "+" || seventh_button.innerText == "-" ) {
   }
   else {
     seventh_button.innerText = "-";
@@ -118,12 +97,11 @@ function change7() {
 }
 
 function change8() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(eight_button.innerText == "+" || eight_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     eight_button.innerText = "+";
     turn++;
-  }
-  else if(eight_button.innerText == "+" || eight_button.innerText == "-" ) {
   }
   else {
     eight_button.innerText = "-";
@@ -132,12 +110,11 @@ function change8() {
 }
 
 function change9() {
-  console.log("działa");
-  if(turn%2 == 0) {
+  if(ninth_button.innerText == "+" || ninth_button.innerText == "-" ) {
+  }
+  else if(turn%2 == 0) {
     ninth_button.innerText = "+";
     turn++;
-  }
-  else if(ninth_button.innerText == "+" || ninth_button.innerText == "-" ) {
   }
   else {
     ninth_button.innerText = "-";
