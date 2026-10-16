@@ -8,6 +8,8 @@ let seventh_button = document.getElementById("button_7");
 let eight_button = document.getElementById("button_8");
 let ninth_button = document.getElementById("button_9");
 
+
+
 let turn = 0;
 
 function check_win() {
