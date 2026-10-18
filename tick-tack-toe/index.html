@@ -5,23 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tick Tack Toe</title>
   <link rel="stylesheet" href="style.css">
-  
+  <link href="https://fonts.cdnfonts.com/css/matcha-mint" rel="stylesheet">
+                
+
 </head>
 <body>
   <main>
-    <button id="button_1" onclick="change1()">?</button>
-    <button id="button_2" onclick="change2()">?</button>
-    <button id="button_3" onclick="change3()">?</button> <br>
+    <section id="section1">    
+    <button id="button_1" onclick="change1()"></button>
+    <button id="button_2" onclick="change2()"></button>
+    <button id="button_3" onclick="change3()"></button> 
+  </section> 
 
-    <button id="button_4" onclick="change4()">?</button>
-    <button id="button_5" onclick="change5()">?</button>
-    <button id="button_6" onclick="change6()">?</button> <br>
+  <section id="section2">
+    <button id="button_4" onclick="change4()"></button>
+    <button id="button_5" onclick="change5()"></button>
+    <button id="button_6" onclick="change6()"></button> 
+  </section>
 
-    <button id="button_7" onclick="change7()">?</button>
-    <button id="button_8" onclick="change8()">?</button>
-    <button id="button_9" onclick="change9()">?</button> <br>
-    <script src="script.js"></script>
+  <section id="section3">
+    <button id="button_7" onclick="change7()"></button>
+    <button id="button_8" onclick="change8()"></button>
+    <button id="button_9" onclick="change9()"></button> 
+  </section>
+  <br>
+  <span id="round"></span>
+  <span id="Win_info"></span> <br>
+  <span id="Player_one">Player one: <span id="Player_one_score"> <br>
+  <span id="Player_two">Player two: <span id="Player_two_score"></span>
+  
+    
   </main>
-
+  <script src="script.js"></script>
 </body>
 </html>

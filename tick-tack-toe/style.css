@@ -1,17 +1,44 @@
 * {
-  font-family: Arial;
-  font-size: 40px;
+  font-family: 'Matcha Mint', sans-serif;
+
+  font-size: 35px;
+}
+
+body {
+  background: #152331;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #152331);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #152331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 button {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 20px;
-  border:0px ;
+  border:0px;
   margin: 10px;
+  transition: 0.3s;
 }
 
-main {
-  text-align: center;
-  margin-top: 100px;
+button:hover {
+  background-color: rgba(255, 255, 255, 0.849);
+  transform: scale(1.05);
+}
+
+span {
+  color: white;
+}
+
+
+#section1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+#section2 {
+  display: flex;
+  justify-content: center;
+}
+#section3 {
+  display: flex;
+  justify-content: center;
 }
