@@ -14,27 +14,49 @@ let Player_two_score = document.getElementById("Player_two_score");
 let turn = 0;
 let round_num = 0;
 
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
 function round_calc() {
+
   if (round_num %2 == 0) {
     round.innerHTML = "Player 1 turn"
   }
   else {
     round.innerText = "Player 2 turn"
-  }
+  };
 }
 function round_calc_win() {
   if (round_num %2 == 0) {
-    Player_two_score.innerHTML += 1;
+    Player_one_score.innerHTML += 1;
+    first_button.innerText = "";
+    second_button.innerText = ""; 
+    third_button.innerText = ""; 
+    fourth_button.innerText = "";
+    fifth_button.innerText = "";
+    sixth_button.innerText = "";   
+    seventh_button.innerText = ""; 
+    eight_button.innerText = ""; 
+    ninth_button.innerText = "";
+    win_info.innerText = "Round result:";
   }
   else {
-    Player_one_score.innerText += 1;
+    Player_two_score.innerText += 1;
+    first_button.innerText = "";
+    second_button.innerText = ""; 
+    third_button.innerText = ""; 
+    fourth_button.innerText = "";
+    fifth_button.innerText = "";
+    sixth_button.innerText = "";   
+    seventh_button.innerText = ""; 
+    eight_button.innerText = ""; 
+    ninth_button.innerText = "";
+    win_info.innerText = "Round result:";
   }
 }
 
 
-function delay(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
 
 
 
@@ -48,7 +70,7 @@ function check_win() {
   {
     round_num += 1;
     round_calc();
-    round_calc_win(); 
+
 
     win_info.innerText = "Round result: Tie"
   delay(2000).then(() => {
@@ -69,6 +91,7 @@ function check_win() {
 
 
   else if (first_button.innerHTML == "o" && second_button.innerHTML == "o" && third_button.innerHTML == "o") {
+    round_num += 1;
     first_button.style.color = "red";
     second_button.style.color = "red";
     third_button.style.color = "red";
@@ -76,9 +99,11 @@ function check_win() {
     second_button.style.fontSize = "40px"
     third_button.style.fontSize = "40px"
     console.log("win");
-    round_calc_win(); 
+    round_calc_win()
+
   }
   else if (first_button.innerHTML == "o" && fourth_button.innerHTML == "o" && seventh_button.innerHTML == "o") {
+    round_num += 1;
     first_button.style.color = "red";
     fourth_button.style.color = "red";
     seventh_button.style.color = "red";
@@ -86,9 +111,10 @@ function check_win() {
     fourth_button.style.fontSize = "60px"
     seventh_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (first_button.innerHTML == "o" && fifth_button.innerHTML == "o" && ninth_button.innerHTML == "o") {
+    round_num += 1;
     first_button.style.color = "red";
     fifth_button.style.color = "red";
     ninth_button.style.color = "red";
@@ -96,9 +122,10 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     ninth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (fourth_button.innerHTML == "o" && fifth_button.innerHTML == "o" && sixth_button.innerHTML == "o") {
+    round_num += 1;
     fourth_button.style.color = "red";
     fifth_button.style.color = "red";
     sixth_button.style.color = "red";
@@ -106,9 +133,10 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     sixth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (seventh_button.innerHTML == "o" && eight_button.innerHTML == "o" && ninth_button.innerHTML == "o") {
+    round_num += 1;
     seventh_button.style.color = "red";
     eight_button.style.color = "red";
     ninth_button.style.color = "red";
@@ -116,9 +144,10 @@ function check_win() {
     eight_button.style.fontSize = "60px"
     ninth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (second_button.innerHTML == "o" && fifth_button.innerHTML == "o" && eight_button.innerHTML == "o") {
+    round_num += 1;
     second_button.style.color = "red";
     fifth_button.style.color = "red";
     eight_button.style.color = "red";
@@ -126,19 +155,20 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     eight_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (third_button.innerHTML == "o" && sixth_button.innerHTML == "o" && ninth_button.innerHTML == "o") {
-    third_button.style.color = "red";
+    round_num += 1;
     sixth_button.style.color = "red";
     ninth_button.style.color = "red";
     third_button.style.fontSize = "60px"
     sixth_button.style.fontSize = "60px"
     ninth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (third_button.innerHTML == "o" && fifth_button.innerHTML == "o" && seventh_button.innerHTML == "o") {
+    round_num += 1;
     third_button.style.color = "red";
     fifth_button.style.color = "red";
     seventh_button.style.color = "red";
@@ -149,6 +179,7 @@ function check_win() {
     round_calc_win(); 
   }
   else if (first_button.innerHTML == "x" && second_button.innerHTML == "x" && third_button.innerHTML == "x") {
+    round_num += 1;
     first_button.style.color = "red";
     second_button.style.color = "red";
     third_button.style.color = "red";
@@ -156,9 +187,10 @@ function check_win() {
     second_button.style.fontSize = "60px"
     third_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (first_button.innerHTML == "x" && fourth_button.innerHTML == "x" && seventh_button.innerHTML == "x") {
+    round_num += 1;
     first_button.style.color = "red";
     fourth_button.style.color = "red";
     seventh_button.style.color = "red";
@@ -166,9 +198,10 @@ function check_win() {
     fourth_button.style.fontSize = "60px"
     seventh_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (first_button.innerHTML == "x" && fifth_button.innerHTML == "x" && ninth_button.innerHTML == "x") {
+    round_num += 1;
     first_button.style.color = "red";
     fifth_button.style.color = "red";
     ninth_button.style.color = "red";
@@ -176,9 +209,10 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     ninth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (fourth_button.innerHTML == "x" && fifth_button.innerHTML == "x" && sixth_button.innerHTML == "x") {
+    round_num += 1;
     fourth_button.style.color = "red";
     fifth_button.style.color = "red";
     sixth_button.style.color = "red";
@@ -186,9 +220,10 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     sixth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (seventh_button.innerHTML == "x" && eight_button.innerHTML == "x" && ninth_button.innerHTML == "x") {
+    round_num += 1;
     seventh_button.style.color = "red";
     eight_button.style.color = "red";
     ninth_button.style.color = "red";
@@ -196,9 +231,10 @@ function check_win() {
     eight_button.style.fontSize = "60px"
     ninth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (second_button.innerHTML == "x" && fifth_button.innerHTML == "x" && eight_button.innerHTML == "x") {
+    round_num += 1;
     second_button.style.color = "red";
     fifth_button.style.color = "red";
     eight_button.style.color = "red";
@@ -206,9 +242,10 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     eight_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (third_button.innerHTML == "x" && sixth_button.innerHTML == "x" && ninth_button.innerHTML == "x") {
+    round_num += 1;
     third_button.style.color = "red";
     sixth_button.style.color = "red";
     ninth_button.style.color = "red";
@@ -216,9 +253,10 @@ function check_win() {
     sixth_button.style.fontSize = "60px"
     ninth_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
   else if (third_button.innerHTML == "x" && fifth_button.innerHTML == "x" && seventh_button.innerHTML == "x") {
+    round_num += 1;
     third_button.style.color = "red";
     fifth_button.style.color = "red";
     seventh_button.style.color = "red";
@@ -226,12 +264,13 @@ function check_win() {
     fifth_button.style.fontSize = "60px"
     seventh_button.style.fontSize = "60px"
     console.log("win");
-    round_calc_win(); 
+
   }
 }
 
 function change1() {
   round_calc();
+  console.log(round_num);
   if(first_button.innerText == "o" || first_button.innerText == "x" ) {
   }
   else if(turn % 2 == 0) {
